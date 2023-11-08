@@ -13,6 +13,7 @@
 		24CE41102AFC0B6D00B2C580 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24CE410E2AFC0B6D00B2C580 /* Main.storyboard */; };
 		24CE41122AFC0B7500B2C580 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24CE41112AFC0B7500B2C580 /* Assets.xcassets */; };
 		24CE41152AFC0B7500B2C580 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24CE41132AFC0B7500B2C580 /* LaunchScreen.storyboard */; };
+		24CE411D2AFC0C5000B2C580 /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24CE411C2AFC0C5000B2C580 /* video.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		24CE41112AFC0B7500B2C580 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24CE41142AFC0B7500B2C580 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24CE41162AFC0B7500B2C580 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24CE411C2AFC0C5000B2C580 /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = video.mp4; path = Videos/video.mp4; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		24CE41072AFC0B6C00B2C580 /* Video display */ = {
 			isa = PBXGroup;
 			children = (
+				24CE411C2AFC0C5000B2C580 /* video.mp4 */,
 				24CE41082AFC0B6C00B2C580 /* AppDelegate.swift */,
 				24CE410A2AFC0B6D00B2C580 /* SceneDelegate.swift */,
 				24CE410C2AFC0B6D00B2C580 /* ViewController.swift */,
@@ -128,6 +131,7 @@
 				24CE41152AFC0B7500B2C580 /* LaunchScreen.storyboard in Resources */,
 				24CE41122AFC0B7500B2C580 /* Assets.xcassets in Resources */,
 				24CE41102AFC0B6D00B2C580 /* Main.storyboard in Resources */,
+				24CE411D2AFC0C5000B2C580 /* video.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
