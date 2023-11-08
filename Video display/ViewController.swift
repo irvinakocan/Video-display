@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     
@@ -19,6 +20,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         setVideoView()
+        setVideoDisplay()
     }
     
     private func setVideoView() {
@@ -27,7 +29,24 @@ class ViewController: UIViewController {
                                  y: 100,
                                  width: view.frame.size.width - 10,
                                  height: view.frame.size.width - 10)
-        videoView.backgroundColor = .blue
+    }
+    
+    private func setVideoDisplay() {
+        guard let path = Bundle.main.path(forResource: "video", ofType: "mp4") else {
+            return
+        }
+        
+        let url = URL(fileURLWithPath: path)
+        
+        let player = AVPlayer(url: url)
+        player.volume = 10
+        player.play()
+        
+        let playerLayer = AVPlayerLayer(player: player)
+        playerLayer.frame = videoView.bounds
+        playerLayer.videoGravity = .resizeAspectFill
+        
+        videoView.layer.addSublayer(playerLayer)
     }
 }
 
